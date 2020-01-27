@@ -1,0 +1,12 @@
+body{
+    background-color: crimson;
+}
+h1.first{
+    background-color: darksalmon;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+a:hover{
+    font-size: 80px;
+}
