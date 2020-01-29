@@ -23,7 +23,7 @@ button.addEventListener("click", function(){
     if(search.value !== ""){
             console.log(search.value);
     for(var i=0; i <jsonInfo.Skolenheter.length; i++){
-        if(search.value === jsonInfo.Skolenheter[i].Kommunkod){
+        if(search.value == jsonInfo.Skolenheter[i].Kommunkod){
         var object=jsonInfo.Skolenheter[i];
         var row = table.insertRow(i+1);
         var cell1 = row.insertCell(0);
