@@ -25,7 +25,7 @@ button.addEventListener("click", function(){
     for(var i=0; i <jsonInfo.Skolenheter.length; i++){
         if(search.value == jsonInfo.Skolenheter[i].Kommunkod){
         var object=jsonInfo.Skolenheter[i];
-        var row = table.insertRow(i+1);
+        var row = table.insertRow(i);
         var cell1 = row.insertCell(0);
         var cell2 = row.insertCell(1);
         var cell3 = row.insertCell(2);
