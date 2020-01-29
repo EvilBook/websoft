@@ -22,7 +22,7 @@ button.addEventListener("click", function(){
     for(var i=0; i <jsonInfo.Skolenheter.length; i++){
         var object=jsonInfo.Skolenheter[i];
         console.log(object);
-        table.insertRow(i+1);
+        var row = table.insertRow(i+1);
         var cell1 = row.insertCell(0);
         var cell2 = row.insertCell(1);
         var cell1 = row.insertCell(2);
