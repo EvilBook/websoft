@@ -17,9 +17,13 @@ fetch('data/skolenhet.json')
 
 var button= document.getElementById('loadData');
 var table= document.getElementById('table1');
+var search= document.getElementById('search');
 
 button.addEventListener("click", function(){
+    if(search.value !== ""){
+            console.log(search.value);
     for(var i=0; i <jsonInfo.Skolenheter.length; i++){
+        if(search.value === jsonInfo.Skolenheter[i].Kommunkod){
         var object=jsonInfo.Skolenheter[i];
         var row = table.insertRow(i+1);
         var cell1 = row.insertCell(0);
@@ -31,6 +35,8 @@ button.addEventListener("click", function(){
         cell2.innerHTML = jsonInfo.Skolenheter[i].Skolenhetsnamn;
         cell3.innerHTML = jsonInfo.Skolenheter[i].Kommunkod;
         cell4.innerHTML = jsonInfo.Skolenheter[i].PeOrgNr;
+        }
         
+    }
     }
 });
