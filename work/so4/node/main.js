@@ -1,8 +1,3 @@
-/**
- * A sample of a main function stating the famous Hello World.
- *
- * @returns void
- */
 function main() {
     let a = 1;
     let b;
@@ -14,11 +9,17 @@ function main() {
         range += i + ", ";
     }
 
-    console.info("Works");
+    console.info("no");
     console.info(range.substring(0, range.length - 2));
     console.info(a, b);
-    var date=new Date();
-    console.log(date.getTime());
+    while(b > 0){
+        if(b===1){
+            console.log("b is one");
+        }
+        b--;
+    }
 }
-
 main();
+
+var date=new Date();
+console.log(date.getDate()+ " "+date.getMonth()+" "+date.getFullYear())
