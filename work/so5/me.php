@@ -2,6 +2,15 @@
 $pageTitle = "Me";
 require __DIR__ . "/view/header.php" ?>
 
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title><?= $pageTitle ?></title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
 
 <body>
 

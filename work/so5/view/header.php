@@ -11,11 +11,21 @@
 
 
 
-<header>
-    <nav>
-        <a href="me.php">Me</a> |
-        <a href="report.php">Report</a> | 
-        <a href="about.php">About</a> |
-        <a href="search.php">Search database</a>
-    </nav>
-</header>
+    <div class="navbar">
+        <div class="menu">
+            <div class="link">    
+                <a href="me.php" id="me">/Me_ </a>
+            </div>
+            <div class="link">    
+                <a href="report.php" id="report">/Report_ </a>  
+            </div>
+            <div class="link">    
+                <a href="about.php" id="about">/About_ </a> 
+            </div>
+            <div class="link">    
+                <a href="search.php" id="search">/Search database_ </a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/header.js"></script>
+    </body>
