@@ -103,7 +103,26 @@
 
 <section>
 <h2>S09</h2>
-<p>Here is the text for this section.</p>
+<p>Elaborate on a few (3-5) different security issues or concerns, from your own experience, related to web application security and relate them to the OWASP.</p>
+    <br>
+<p>Since we started developing a website for an actual company we ran into many security questions that we constantly as ourselves and actual concerns about the possibility of attacks and the consequences of those. Moreover to add to our fears our employer's original webpage got hacked since it used an insecure HTTP connection exposing it to a plethora of security breaches.</p>
+    <p>Our first and main concern is with handling users' credit card information since our website is going to be an online store. Users will be able to save their cards for future use and also input that information when they checkout. This concern is directly related to OWASP concern of Sensitive Data Exposure. We have not yet reached a consensus on the best way to deal with this problem. This information will be stored in our database and also transmitted from client side to server side making it very vulnerable to man in the middle attacks.</p>
+    
+    <p>Another concern that is also somewhat related to our first concern is the fact that we are going to register users and keep their information in our database and also we will have the entire store's information in our database such as products and quantities and shipping information. This concern relates to OWASP with the Injection concern. Mainly we are thinking about our SQL database vulnerabilities and query parsing. We know that a poor design and not sufficient query checking will leave our database vulnerable to injection. And if someone manges to inject in our database then they can pretty much do anything on or with the page.</p>
+    
+    <p>The last main concern that plagues our daily lives is also related to OWASP and it is the broken authentication. This is again connected to the above listed concerns. In the end all the security concerns are in a way linked to each other. This authentication concern scares us in the way that if our mechanism isn't proper the same fate could befall our page as it did it's predecessor. Complete shutdown and takeover of the entire system.</p>
+    <br>
+<p>Summarize by providing your own guidelines to a new web programmer on the topic “The essential guidelines to follow to create secure web applications”.</p>
+    <br>
+<p>I would advise a new programmer to delve into security for sure. And I would tell him how to make appropriate threat assessment analysis on his work to know just how much of a risk security is and how much time should be invested.
+    I would also tell them to always check all user input of any kind to their software. A small gap is enough for attackers to find ways to create all sorts of problems such as buffer overflow attacks or SQL injections.
+    I will also tell them to always provide processes and users with the minimum access they need to perform their task. Never give a process or user more power than they need. Don't be lazy.
+    I would also suggest to this programmer to always encrypt sensitive data when or if transmiting it through insecure channels.</p>
+    <br>
+     <p>What is your TIL for this course section?</p>
+    <br>
+<p>I learned about how to deal with broken authentication. Most of the security concerns I knew from our course on network security. I learned from our project that it is actually not so easy to protect a system from attackers. I also learned security is expensive. On a side note I used the word 'WE' a lot in this assignemnt and it is because it concerned the work im doing on the project with my team.</p>
+    <br>
 </section>
 
 <footer>
