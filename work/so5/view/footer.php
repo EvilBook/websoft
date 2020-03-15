@@ -1,4 +1,4 @@
 <footer>
     <hr>
-    <p>Provide a nice footer to to this page.</p>
+    <p>THIS IS MY CONSTANT FOOTER THROUGH ALL PAGES.</p>
 </footer>

@@ -1,7 +1,7 @@
 var express = require("express");
 var router  = express.Router();
 
-router.get("/", (req, res) => {
+router.get("/today", (req, res) => {
     let data = {};
 
     data.date = new Date();

@@ -1,0 +1,22 @@
+.animal{
+    width: 256px;
+    height: 256px;
+    border: 1px solid black;
+    background-image: url(../img/katt.gif);
+    background-size: 256 px;
+    position: absolute;
+    top:20px;
+    left:20px;
+    object-fit: cover;
+}
+#image{
+    
+    width: 256px;
+    height: 256px;
+    position: absolute;
+    top:20px;
+    left:20px;
+    object-fit: cover;
+    
+
+}
